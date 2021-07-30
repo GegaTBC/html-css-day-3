@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	/* 10px/16px = 62.5% -> 1rem = 10px */
+}
+
+body {
+	box-sizing: border-box;
+}
+
+.features {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.feature {
+	width: 30%;
+	border: 1px solid #eaeaea;
+	display: inline-block;
+	margin: 1rem;
+}
+
+.feature > div:not(:first-child) {
+	padding: 1rem 2rem;
+}
+
+.feature__documents {
+	border-bottom: 1px solid #eaeaea;
+	padding: 2rem 2rem 1rem 2rem;
+}
+
+.feature__documents > *:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.feature__document > p {
+	font-size: 1.5rem;
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+.feature__documents--redundance,
+.feature__info--header {
+	font-size: 1.5rem;
+}
+
+.feature__info--updating {
+	font-size: 2.5rem;
+	margin: 1rem 0;
+}
+
+.feature__info__profile {
+	position: relative;
+}
+
+.feature__info__profile--img {
+	display: inline-block;
+	height: 6rem;
+}
+
+.feature__info__profile--info {
+	position: absolute;
+	left: 7rem;
+	top: 0.5rem;
+}
+
+.feature__info__profile--name,
+.feature__info__profile--created {
+	font-size: 2rem;
+}
+
+.feature__info__profile--created {
+	margin-top: 0.5rem;
+	color: #676767;
+}
+
+.feature__icons {
+	height: 6rem;
+}
+
+.feature__icons div img {
+	width: 2.8rem;
+}
+
+.feature__icons--left {
+	display: inline-block;
+	float: left;
+}
+
+.feature__icons--left > img {
+	margin-right: 4rem;
+}
+
+.feature__icons--left > img:first-child {
+	margin-left: 1rem;
+}
+
+.feature__icons--right {
+	float: right;
+}
+
+.feature__icons--right > img {
+	margin-right: 1rem;
+}
+
+.feature__icons--right > summary {
+	display: inline-block;
+	font-size: 2.8rem;
+	float: right;
+}
